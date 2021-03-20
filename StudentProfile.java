@@ -5,14 +5,21 @@ public class StudentProfile{
   private String StudentEmail;
   private String StudentNumber;
   private String CourseSection;
+  private String StudentMajor;
+  private String YearLevel;
+  private String CollegeName;
 
-  public Person(String name,String age, String gender, String email, String studentnum, String cs){
+  public Person(String name,String age, String gender, String email, String studentnum, String cs, String major, String yearlvl, String cn){
 	setName(name);
 	setAge(age);
 	setGender(gender);
 	setStudentEmail(email);
 	setStudentNumber(studentnum);
 	setCourseSection(cs);
+	setStudentMajor(major);
+	setYearLevel(yearlvl);
+	setCollegeName(cn);	
+
 	}
   public String getName(){
 	return name;
@@ -57,5 +64,27 @@ public class StudentProfile{
     this.cs=cs;
 	}
 
+public String getStudentMajor(){
+    return major;
+	}
 
+public void setStudentMajor(String major){
+    this.major=major;
+	}
+
+public String getYearLevel(){
+    return yearlvl;
+	}
+
+public void setStudentNumber(int yearlvl){
+    this.yearlvl=yearlvl;
+	}
+
+public String getCollegeName(){
+    return cn;
+	}
+
+public void setStudentNumber(String cn){
+    this.cn=cn;
+	}
 }
